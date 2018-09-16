@@ -1,16 +1,13 @@
-repos:
--   repo: local
-    hooks:
-    -   id: nimble-check
-        name: nimble check
-        entry: nimble check .
-        pass_filenames: false
-        language: system
-        # types: [nim]
-        files: '\.nim$'
-    -   id: nim-check
-        name: nim check
-        entry: bash -xc 'echo "$@" | xargs --verbose -n1 nim check' --
-        language: system
-        # types: [nim]
-        files: '\.nim$'
+-   id: nimble-check
+    name: nimble check
+    entry: nimble check .
+    pass_filenames: false
+    language: system
+    # types: [nim]
+    files: '\.nim$'
+-   id: nim-check
+    name: nim check
+    entry: bash -xc 'echo "$@" | xargs --verbose -n1 nim check' --
+    language: system
+    # types: [nim]
+    files: '\.nim$'
