@@ -11,3 +11,9 @@
     language: system
     # types: [nim]
     files: '\.nim$'
+-   id: nimpretty
+    name: nimpretty
+    entry: bash -xc 'echo "$@" | xargs --verbose -n1 nimpretty' --
+    language: system
+    # types: [nim]
+    files: '\.nim$'
